@@ -3,6 +3,13 @@ import React from "react";
 class SongPicker extends React.Component {
     songInput = React.createRef();
 
+    removeSpaces = (event) => {
+        if (event.currentTarget.value.includes(" ")) {
+            // /\s/g expression matches all empty spaces
+            event.currentTarget.value = event.currentTarget.value.replace(/\s/g, "");
+        }
+    }
+
     goToSongPlan = (event) => {
         // 1. Stop the form from submitting
         event.preventDefault();
@@ -19,7 +26,7 @@ class SongPicker extends React.Component {
     render() {
         return (
             <form className="song-picker" onSubmit={this.goToSongPlan}>
-                <input type="text" required placeholder="Song Name" ref={this.songInput} />
+                <input type="text" required placeholder="Song Name" ref={this.songInput} onChange={this.removeSpaces} />
                 <button type="submit">View Song Plan</button>
             </form>
         );
