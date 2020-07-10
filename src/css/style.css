@@ -1,6 +1,24 @@
+/* App wide styles */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+/* Song Name Picker styles */
+.song-picker {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.song-picker input, .song-picker button {
+  width: 80%;
+  text-align: center;
+  padding: 0;
+}
+.song-picker input {
+  height: 40px;
+}
+.song-picker button {
+  height: 30px;
 }
