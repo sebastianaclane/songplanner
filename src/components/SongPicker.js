@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 class SongPicker extends React.Component {
     songInput = React.createRef();
@@ -19,11 +20,14 @@ class SongPicker extends React.Component {
     
     render() {
         return (
+            <React.Fragment>
+                <Header title="Song Planner" />
             <form className="song-picker" onSubmit={this.goToSongPlan}>
                 <h2>Please Enter A Song Name</h2>
                 <input type="text" required placeholder="Song Name" ref={this.songInput} onChange={this.removeSpaces} />
                 <button type="submit">View Song Plan</button>
             </form>
+            </React.Fragment>
         );
     }
 }
