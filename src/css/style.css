@@ -12,11 +12,14 @@ header h1 {
 /* Header Styles */
 /************************* */
 header {
-  background-color: #06709f;
+  background-color: #403e3e;
   margin-bottom: 15px;
 }
 header h1 a {
-  color: lightgreen;
+  color: #F98C45;
+}
+header h1 a:hover {
+  color: #FFF;
 }
 /************************* */
 /* Song Name Picker styles */
