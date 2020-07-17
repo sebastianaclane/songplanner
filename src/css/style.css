@@ -1,3 +1,8 @@
+/* Site Wide Styles */
+/************************* */
+body {
+  background-color: #6c757d;
+}
 /* Fonts */
 /************************* */
 /* Import Fondamento and Open Sans Google fonts */
@@ -28,6 +33,12 @@ header h1 a:hover {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
+  border: 2px solid #403e3e;
+  padding: 20px;
+  background-color: #FFF;
+}
+.song-picker h3 {
+  margin-bottom: 10px;
 }
 .song-picker input, .song-picker button {
   width: 80%;
@@ -36,6 +47,7 @@ header h1 a:hover {
 }
 .song-picker input {
   height: 40px;
+  margin-bottom: 4px;
 }
 .song-picker button {
   height: 30px;
